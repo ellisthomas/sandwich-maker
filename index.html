@@ -11,7 +11,47 @@
 <!-- the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat") -->
 
 <!-- an empty DOM element into which the final sandwich order and its cost will be inserted -->
+	<div class="toppings">
+		<div>
+			<h4>Bread:</h4>
+			<input type="checkbox" name="bread" value="white">White</input>
+			<input type="checkbox" name="bread" value="wheat">Wheat</input>
+			<input type="checkbox" name="bread" value="cibatta">Cibatta</input>
+			<input type="checkbox" name="bread" value="none">None</input>
+		</div>
 
+		<div>
+			<h4>Meat:</h4>
+			<input type="checkbox" name="meat" value="turkey">Turkey</input>
+			<input type="checkbox" name="meat" value="ham">Ham</input>
+			<input type="checkbox" name="meat" value="bacon">Bacon</input>
+			<input type="checkbox" name="meat" value="none">None</input>
+		</div>
+
+		<div>
+			<h4>Cheese:</h4>
+			<input type="checkbox" name="chesse" value="cheddar">Cheddar</input>
+			<input type="checkbox" name="chesse" value="provolone">Provolone</input>
+			<input type="checkbox" name="chesse" value="swiss">Swiss</input>
+			<input type="checkbox" name="cheese" value="none">None</input>
+		</div>
+
+		<div>
+			<h4>Veggies:</h4>
+			<input type="checkbox" name="veggies" value="lettuce">Lettuce</input>
+			<input type="checkbox" name="veggies" value="tomato">Tomato</input>
+			<input type="checkbox" name="veggies" value="onion">Onion</input>
+			<input type="checkbox" name="veggies" value="none">None</input>
+		</div>
+
+		<div>
+			<h4>Condiments:</h4>
+			<input type="checkbox" name="condiments" value="mustard">Mustard</input>
+			<input type="checkbox" name="condiments" value="mayo">Mayo</input>
+			<input type="checkbox" name="condiments" value="barbecue">Barbecue</input>
+			<input type="checkbox" name="condiments" value="none">None</input>
+		</div>
+	</div>
 
 <script type="text/javascript" src="sandwichMaker.js"></script>
 <script type="text/javascript" src="bread.js"></script>
