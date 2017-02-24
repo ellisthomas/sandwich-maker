@@ -11,11 +11,13 @@ var meatChooser = document.getElementById("meat-chooser");
   A <select> element broadcasts a change event, so you listen for it
   and get the value of the topping from your augmented IIFE
 */
-meatChooser.addEventListener("change", function(event) {
+meatChooser.addEventListener("click", function(event) {
   // Get the value chosen from the DOM
   selectedTopping = event.target.value;
 
   // Determine the price of the topping chosen
-
+var toppingPrice = SandwichMaker.addMeat(selectedTopping);
   // Add the topping to the SandwichMaker to increase the total price
+SandwichMaker.addTopping(toppingPrice);
+console.log(selectedTopping, "price is",toppingPrice);
 });

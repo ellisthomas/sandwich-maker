@@ -1,21 +1,21 @@
-var SandwichMaker = (function() {
-	var meatPrices
-		"turkey":, 1
-		"ham":, 3
-		"bacon":, 9
-	};
+var SandwichMaker = (function(maker) {
+var meatPrices = {
+		"turkey": 1,
+		"ham": 3,
+		"bacon": 9,
+		"nomeat": 0,
+		};
+	
 
 
 
-
-  
-  maker.addMeat = function() {
-    return ???;
-  };
+  maker.addMeat = function(meatSelection) {
+    return meatPrices[meatSelection];
+  }
 
   
   return maker;
-})(SandwichMaker);
+})(SandwichMaker || {});
 
 // This SandwichMaker IIFE augments the original one
 
