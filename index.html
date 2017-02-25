@@ -13,12 +13,12 @@
 
 <!-- an empty DOM element into which the final sandwich order and its cost will be inserted -->
 	<div class="toppings">
-		<div>
+		<div id="bread-chooser">
 			<h4>Bread:</h4>
 			<input type="checkbox" name="bread" value="white">White</input>
 			<input type="checkbox" name="bread" value="wheat">Wheat</input>
 			<input type="checkbox" name="bread" value="cibatta">Cibatta</input>
-			<input type="checkbox" name="bread" value="none">None</input>
+			<input type="checkbox" name="bread" value="flatbread">Flatbread</input>
 		</div>
 
 		<div id="meat-chooser">
@@ -26,10 +26,10 @@
 			<input type="checkbox" name="meat" value="turkey">Turkey</input>
 			<input type="checkbox" name="meat" value="ham">Ham</input>
 			<input type="checkbox" name="meat" value="bacon">Bacon</input>
-			<input type="checkbox" name="meat" value="nomeat">None</input>
+			<input type="checkbox" name="meat" value="no meat">None</input>
 		</div>
 
-		<div>
+		<div id="chesse-chooser">
 			<h4>Cheese:</h4>
 			<input type="checkbox" name="chesse" value="cheddar">Cheddar</input>
 			<input type="checkbox" name="chesse" value="provolone">Provolone</input>
@@ -37,7 +37,7 @@
 			<input type="checkbox" name="cheese" value="none">None</input>
 		</div>
 
-		<div>
+		<div id="veggies-chooser">
 			<h4>Veggies:</h4>
 			<input type="checkbox" name="veggies" value="lettuce">Lettuce</input>
 			<input type="checkbox" name="veggies" value="tomato">Tomato</input>
@@ -45,7 +45,7 @@
 			<input type="checkbox" name="veggies" value="none">None</input>
 		</div>
 
-		<div>
+		<div id="condiments-chooser">
 			<h4>Condiments:</h4>
 			<input type="checkbox" name="condiments" value="mustard">Mustard</input>
 			<input type="checkbox" name="condiments" value="mayo">Mayo</input>
@@ -54,7 +54,10 @@
 		</div>
 	</div>
 
-	<button>Get Price</button>
+	<button id="btn">Get Price</button>
+	
+	<div id="orderPrice">	
+	</div>
 
 <script type="text/javascript" src="javascripts/sandwichMaker.js"></script>
 <script type="text/javascript" src="javascripts/bread.js"></script>

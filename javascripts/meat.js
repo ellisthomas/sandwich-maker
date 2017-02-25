@@ -3,17 +3,13 @@ var meatPrices = {
 		"turkey": 1,
 		"ham": 3,
 		"bacon": 9,
-		"nomeat": 0,
+		"no meat": 0,
 		};
 	
-
-
-
   maker.addMeat = function(meatSelection) {
     return meatPrices[meatSelection];
   }
 
-  
   return maker;
 })(SandwichMaker || {});
 
