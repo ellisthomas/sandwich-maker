@@ -1,9 +1,9 @@
 var SandwichMaker = (function(maker) {
-var chessePrices = {
+var cheesePrices = {
 		"cheddar": 6.50,
 		"provolone": 4.50,
 		"swiss": 3.33,
-		"none": 0,
+		"none": 0
 		};
 	
   maker.addCheese = function(chesseSelection) {

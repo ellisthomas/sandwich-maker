@@ -2,7 +2,7 @@ var SandwichMaker = (function(maker) {
 var breadPrices = {
 		"white": 2,
 		"wheat": 3,
-		"chibatta": 4,
+		"cibatta": 4,
 		"flatbread": 7,
 		};
 	
