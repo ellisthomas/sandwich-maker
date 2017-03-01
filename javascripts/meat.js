@@ -1,14 +1,14 @@
 var SandwichMaker = (function(maker) {
 var meatPrices = {
-		"turkey": 1,
-		"ham": 3,
-		"bacon": 9,
-		"no meat": 0
+	"turkey": 1,
+	"ham": 3,
+	"bacon": 9,
+	"no meat": 0
 		};
 	
-  maker.addMeat = function(meatSelection) {
-    return meatPrices[meatSelection];
-  }
+maker.addMeat = function(meatSelection) {
+  return meatPrices[meatSelection];
+}
 
   return maker;
 })(SandwichMaker || {});
