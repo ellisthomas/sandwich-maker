@@ -19,74 +19,89 @@ var refresh = document.getElementById("refresh");
 */
 
 			//////// MEAT //////////
-	meatChooser.addEventListener("change", function(event) {
-	  // Get the value chosen from the DOM
-	  selectedTopping = event.target.value;
-
-	  // Determine the price of the topping chosen
-		var toppingPrice = SandwichMaker.addMeat(selectedTopping);
-		  // Add the topping to the SandwichMaker to increase the total price
-		SandwichMaker.addTopping(toppingPrice);
-		console.log(selectedTopping, "price is",toppingPrice);
+meatChooser.addEventListener("change", function(event) {
+  selectedTopping = event.target.value;
+  var toppingPrice = SandwichMaker.addMeat(selectedTopping);
+  if (event.target.checked === true) {
+    SandwichMaker.addTopping(toppingPrice);    
+  } else {
+    SandwichMaker.removeTopping(toppingPrice);
+  }
+  console.log(selectedTopping, "price is",toppingPrice);
 });
+    // Get the value chosen from the DOM
+
+    // Determine the price of the topping chosen
+      // Add the topping to the SandwichMaker to increase the total price
+  
 
 			//////// BREAD //////////
 
 breadChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-
-  // Determine the price of the topping chosen
-var toppingPrice = SandwichMaker.addBread(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-SandwichMaker.addTopping(toppingPrice);
-console.log(selectedTopping, "price is",toppingPrice);
+  var toppingPrice = SandwichMaker.addBread(selectedTopping);
+  if (event.target.checked === true) {
+    SandwichMaker.addTopping(toppingPrice);
+  } else {
+    SandwichMaker.removeTopping(toppingPrice);
+  }
+  console.log(selectedTopping, "price is",toppingPrice);
 });
+// Get the value chosen from the DOM
+// Determine the price of the topping chosen
+// Add the topping to the SandwichMaker to increase the total price
 
 			//////// CHESSE //////////
-
 cheeseChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-
-  // Determine the price of the topping chosen
-var toppingPrice = SandwichMaker.addCheese(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-SandwichMaker.addTopping(toppingPrice);
-console.log(selectedTopping, "price is",toppingPrice);
+  var toppingPrice = SandwichMaker.addCheese(selectedTopping);
+  if (event.target.checked === true) {
+    SandwichMaker.addTopping(toppingPrice);
+  } else {
+    SandwichMaker.removeTopping(toppingPrice);
+  }
+  console.log(selectedTopping, "price is",toppingPrice);
 });
+  // Get the value chosen from the DOM
+  // Determine the price of the topping chosen
+  // Add the topping to the SandwichMaker to increase the total price
 
 			//////// VEGGIES //////////
 
 veggiesChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-
-  // Determine the price of the topping chosen
-var toppingPrice = SandwichMaker.addVeggies(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-SandwichMaker.addTopping(toppingPrice);
-console.log(selectedTopping, "price is",toppingPrice);
+  var toppingPrice = SandwichMaker.addVeggies(selectedTopping);
+  if (event.target.checked === true) {
+    SandwichMaker.addTopping(toppingPrice); 
+  } else {
+    SandwichMaker.removeTopping(toppingPrice);
+  }
+  console.log(selectedTopping, "price is",toppingPrice);
 });
+  // Get the value chosen from the DOM
+  // Determine the price of the topping chosen
+  // Add the topping to the SandwichMaker to increase the total price
 
 			//////// CONDIMENTS //////////
 
 condimentsChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
   selectedTopping = event.target.value;
-
-  // Determine the price of the topping chosen
-var toppingPrice = SandwichMaker.addCondiments(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-SandwichMaker.addTopping(toppingPrice);
-console.log(selectedTopping, "price is",toppingPrice);
+  var toppingPrice = SandwichMaker.addCondiments(selectedTopping);
+  if (event.target.checked === true) {
+  SandwichMaker.addTopping(toppingPrice);
+  } else {
+    SandwichMaker.removeTopping(toppingPrice);
+  }
+  console.log(selectedTopping, "price is",toppingPrice);
 });
-
+  // Get the value chosen from the DOM
+  // Determine the price of the topping chosen
+  // Add the topping to the SandwichMaker to increase the total price
 
 sandwichPrice.addEventListener("click", function(){
 	var finalSandwichPrice = SandwichMaker.getTotalPrice();
 	document.getElementById("orderPrice").innerHTML = "Sandwich total: $" + finalSandwichPrice;
-	console.log ("sandwich total price is : ", SandwichMaker.getTotalPrice());
+	// console.log ("sandwich total price is : ", SandwichMaker.getTotalPrice());
 });
 
 
