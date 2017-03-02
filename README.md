@@ -27,11 +27,22 @@ Don't worry about exposing the prices to the user until you display the final co
 Here's some simple boilerplate code to get you started.
 
 ### Languages Used
-- HTML
-- JavaScript
+[](html5.png)<img src="https://raw.githubusercontent.com/tkswann2/tech-logos/master/html5.png" height="40">
+[](css3.png)<img src="https://raw.githubusercontent.com/tkswann2/tech-logos/master/css3.png" height="40">
+[](jslogo.png)<img src="https://raw.githubusercontent.com/tkswann2/tech-logos/master/jslogo.png" height="40">
+
+### Sandwich Maker
+![sandwich maker](https://raw.githubusercontent.com/ellisthomas/sandwich-maker/sandwich/screengrab/sandwichmaker.png)
 
 ### How to run (Node must be installed on your machine):
 ```
+git clone git@github.com:ellisthomas/sandwich-maker.git
+npm install http-server -g
+http-server -p 8080
 ```
+
+This will show in your browser at:
+`http://localhost:8080`
+
 ### Contributors 
-Ellis Thomas
+[Ellis Thomas](https://github.com/ellisthomas)
