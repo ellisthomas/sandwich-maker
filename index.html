@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>IIFE Sandwich Maker</title>
+</head>
+<body>
+
+<!-- a section of options for each sandwich part -->
+
+<!-- the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat") -->
+
+<!-- an empty DOM element into which the final sandwich order and its cost will be inserted -->
+	<div class="toppings">
+		<div id="bread-chooser">
+			<h4>Bread:</h4>
+			<input type="checkbox" name="bread" value="white">White</input>
+			<input type="checkbox" name="bread" value="wheat">Wheat</input>
+			<input type="checkbox" name="bread" value="cibatta">Cibatta</input>
+			<input type="checkbox" name="bread" value="flatbread">Flatbread</input>
+		</div>
+
+		<div id="meat-chooser">
+			<h4>Meat:</h4>
+			<input type="checkbox" name="meat" value="turkey">Turkey</input>
+			<input type="checkbox" name="meat" value="ham">Ham</input>
+			<input type="checkbox" name="meat" value="bacon">Bacon</input>
+			<input type="checkbox" name="meat" value="no meat">None</input>
+		</div>
+
+		<div id="cheese-chooser">
+			<h4>Cheese:</h4>
+			<input type="checkbox" name="cheese" value="cheddar">Cheddar</input>
+			<input type="checkbox" name="cheese" value="provolone">Provolone</input>
+			<input type="checkbox" name="cheese" value="swiss">Swiss</input>
+			<input type="checkbox" name="cheese" value="none">None</input>
+		</div>
+
+		<div id="veggies-chooser">
+			<h4>Veggies:</h4>
+			<input type="checkbox" name="veggies" value="lettuce">Lettuce</input>
+			<input type="checkbox" name="veggies" value="tomato">Tomato</input>
+			<input type="checkbox" name="veggies" value="onion">Onion</input>
+			<input type="checkbox" name="veggies" value="none">None</input>
+		</div>
+
+		<div id="condiments-chooser">
+			<h4>Condiments:</h4>
+			<input type="checkbox" name="condiments" value="mustard">Mustard</input>
+			<input type="checkbox" name="condiments" value="mayo">Mayo</input>
+			<input type="checkbox" name="condiments" value="barbecue">Barbecue</input>
+			<input type="checkbox" name="condiments" value="none">None</input>
+		</div>
+	</div>
+
+	<button id="btn">Get Price</button>
+
+	<div id="orderPrice">Sandwich Total:</div>
+
+	<script type="text/javascript" src="javascripts/sandwichMaker.js"></script>
+	<script type="text/javascript" src="javascripts/bread.js"></script>
+	<script type="text/javascript" src="javascripts/meat.js"></script>
+	<script type="text/javascript" src="javascripts/cheese.js"></script>
+	<script type="text/javascript" src="javascripts/veggies.js"></script>
+	<script type="text/javascript" src="javascripts/condiments.js"></script>
+	<script type="text/javascript" src="javascripts/DOMHandler.js"></script>
+</body>
+</html>
+
+
+
